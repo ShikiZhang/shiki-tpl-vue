@@ -5,8 +5,8 @@
     "main": "webpack.vue.config.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "webpack-dev-server --config webpack.vue.config.js --inline --hot",
-        "build-vue": "webpack --config webpack.vue.config.js -p --progress --colors"
+        "start": "webpack-dev-server --config webpack.config.js --inline --hot",
+        "build": "rm -rf project/&&webpack --config webpack.config.js -p --progress --colors"
     },
     "repository": {
         "type": "git",

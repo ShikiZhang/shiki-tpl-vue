@@ -8,7 +8,7 @@ module.exports = {
         index: './src/js/index.js'
     },
     output: {
-        path: path.resolve('vuedist'),
+        path: path.resolve('project'),
         filename: 'js/[name].bundle.js',
         chunkFilename: 'js/[name].bundle.js'
             // publicPath: './'
@@ -21,11 +21,6 @@ module.exports = {
         }
     },
     plugins: [
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false
-            }
-        }),
         new ExtractTextWebpackPlugin('css/[name].css'),
         new HtmlWebpackPlugin({
             filename: 'index.html',
